@@ -2,10 +2,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CalculateSimpleInterest : NSObject{
-    float const simpleInterestDivisor;
-}
-    
+@interface CalculateSimpleInterest : NSObject
+
+
+@property float const simpleInterestDivisor;
+
 
 @property float principalAmount;
 @property float rate,timePeriod;

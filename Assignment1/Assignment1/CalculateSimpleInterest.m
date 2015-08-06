@@ -9,7 +9,7 @@
 @synthesize rate;
 @synthesize timePeriod;
 
-float const simpleInterestDivisor=100;
+simpleInterestDivisor=100;
 
 -(float)simpleInterestCalculatorWithAmount:(float)principalAmount withinterest:(float)rate withtime:(float)timePeriod  {
     
