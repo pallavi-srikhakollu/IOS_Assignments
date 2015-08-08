@@ -22,7 +22,7 @@
     self.title = @"Details";
     //Assigning detils to label
     
-    lableFirstName.text = firstname;
+    self.lableFirstName.text = firstname;
     lableLastName.text = lastname;
     labelCity.text = city;
     labelState.text = state;
