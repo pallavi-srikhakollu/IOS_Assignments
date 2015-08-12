@@ -4,17 +4,13 @@
 
 @implementation Person
 @synthesize address;
+@synthesize firstName;
+@synthesize lastName;
 
--(Person*)initWithValuesOfCity:(NSString *) city withState :(NSString *) state{
-    
-    address =[[Address alloc]init];
-    self.address.state = state;
-    self.address.city=city;
-    
-    
-    return self;
-    
-    
+-(instancetype)init{
+self.firstName=@"";
+self.lastName=@"";
+address =[[Address alloc]init];
+return self;
 }
-
 @end

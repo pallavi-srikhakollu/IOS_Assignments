@@ -9,12 +9,9 @@
 
 @property int employeeId;
 @property int experience;
-@property NSMutableArray* technology;
+@property NSString * technology;
 @property NSMutableArray *arrayOfEmployeeObjects;
-
-
--(Employee *)initWithValuesOfFirstName:(NSString*)firstName withLastName :(NSString*)lastName withCity :(NSString*)city withState:(NSString*)state withEmployeeId:(int)employeeId    withExperience :(int)experience;
-
+@property  InformationDicitonary *informationDicitonary;
 
 -(void) arrayOfEmployeeInformation;
 -(void)print;

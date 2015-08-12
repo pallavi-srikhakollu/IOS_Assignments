@@ -17,8 +17,8 @@
                                  [NSDictionary dictionaryWithObjectsAndKeys:
                                   @"pune",@"city",@"maharashtra",@"state",nil],@"address",
                                  @1  ,@"employeeId",
-                                 @1 ,@"experience",
-                                 [NSArray arrayWithObjects:@"c++",@"java", nil ] ,@"technolgies",nil],
+                                 @2 ,@"experience",
+                                 @"c++",@"technolgies",nil],
                                    
                                    
                                 [NSDictionary dictionaryWithObjectsAndKeys:
@@ -27,8 +27,8 @@
                                  [NSDictionary dictionaryWithObjectsAndKeys:
                                   @"pune",@"city",@"maharashtra",@"state",nil],@"address",
                                  @2 ,@"employeeId",
-                                 @3 ,@"experience",
-                                 [NSArray arrayWithObjects:@"c++",@"java", nil ] ,@"technolgies",nil],
+                                 @4 ,@"experience",
+                                 @"java",@"technolgies",nil],
                                    
                                    
                                 [NSDictionary dictionaryWithObjectsAndKeys:
@@ -36,24 +36,15 @@
                                  @"srikhakollu",@"lastname",
                                  [NSDictionary dictionaryWithObjectsAndKeys:
                                   @"hyderabad",@"city",@"andhrapradesh",@"state",nil],@"address",
-                                 [@3 intValue],@"employeeId",
-                                 [@5 intValue],@"experience",
-                                 [NSArray arrayWithObjects:@"c++",@"html",@"mainframe", nil ] ,@"technolgies",nil]
+                                 @3 ,@"employeeId",
+                                 @5 ,@"experience",
+                                 @"html",@"technolgies",nil]
                                 
                                 
                                 ,nil];
     
-    
-    
-    
-    
-    
-   // NSLog(@"%@",arrayOfInformationDicitonary);
-
 
     return self;
-
-
 
 }
 

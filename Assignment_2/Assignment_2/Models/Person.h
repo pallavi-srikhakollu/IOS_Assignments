@@ -9,6 +9,5 @@
 @property NSString * firstName;
 @property NSString * lastName;
 @property Address *address;
-
--(Person *)initWithValuesOfCity:(NSString *) city withState :(NSString *) state;
+-(instancetype) init;
 @end

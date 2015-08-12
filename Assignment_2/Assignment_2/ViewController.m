@@ -12,13 +12,14 @@
     [super viewDidLoad];
     Employee *employee=[[Employee alloc]init];
     [employee arrayOfEmployeeInformation];
-    [employee selectedEmployeeWithLessExperience:3];
+    //NSLog(@"%@",[employee arrayOfEmployeeObjects]);
+   [employee selectedEmployeeWithLessExperience:3];
     [employee selectedEmployeeWithMoreExperience:1];
     [employee selectedEmployeeWithEqualExperience:1];
-    NSArray *requiredTechnologies = @[@"c++",@"java"];
+    NSArray *requiredTechnologies = @[@"c++",@"java",@"html"];
     for(int i=0;i<requiredTechnologies.count;i++)
     {
-        NSLog(@"inside for");
+       // NSLog(@"inside for");
         [employee employeeWithHighestExperienceInGivenTechnology:[requiredTechnologies objectAtIndex:i]];
         
     }
