@@ -16,7 +16,7 @@
    [employee selectedEmployeeWithLessExperience:3];
     [employee selectedEmployeeWithMoreExperience:1];
     [employee selectedEmployeeWithEqualExperience:1];
-    NSArray *requiredTechnologies = @[@"c++",@"java",@"html"];
+    NSArray *requiredTechnologies = @[@"c++",@"java",@"html",@"ios"];
     for(int i=0;i<requiredTechnologies.count;i++)
     {
        // NSLog(@"inside for");

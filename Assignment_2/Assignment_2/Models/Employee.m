@@ -19,18 +19,14 @@
     
     NSInteger length;
     
-    informationDicitonary =[[InformationDicitonary alloc]init];
-    
     NSMutableDictionary *localDicitonary=[[NSMutableDictionary alloc]init];
     NSMutableDictionary *localDicitonaryForAddress=[[NSMutableDictionary alloc]init];
-    
-    length= informationDicitonary.arrayOfInformationDicitonary.count;
-    arrayOfEmployeeObjects =[[NSMutableArray alloc]init];
-    
+    NSMutableArray *employeeArray  = [[InformationDicitonary dicitonaryOfEmployee] mutableCopy];
+    arrayOfEmployeeObjects = [[NSMutableArray alloc]init];
+    length = employeeArray.count;
     for (int i=0; i<length; i++) {
         
-        localDicitonary=[informationDicitonary.arrayOfInformationDicitonary objectAtIndex:i];
-        
+        localDicitonary=[employeeArray objectAtIndex:i];
         Employee *employee = [[Employee alloc]init];
         localDicitonaryForAddress = [localDicitonary objectForKey:@"address"];
         employee.firstName = [localDicitonary objectForKey:@"firstname"];
@@ -39,7 +35,7 @@
         employee.address.state = [localDicitonaryForAddress objectForKey:@"state"];
         employee.employeeId = [[localDicitonary objectForKey:@"employeeId"] intValue];
         employee.experience = [[localDicitonary objectForKey:@"experience"] intValue];
-        employee.technology = [localDicitonary objectForKey:@"technolgies"];
+        employee.technology = [localDicitonary objectForKey:@"technology"];
         [arrayOfEmployeeObjects addObject:employee];
 
         

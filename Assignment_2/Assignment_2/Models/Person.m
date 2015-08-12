@@ -8,9 +8,9 @@
 @synthesize lastName;
 
 -(instancetype)init{
-self.firstName=@"";
-self.lastName=@"";
-address =[[Address alloc]init];
-return self;
+    self.firstName=@"";
+    self.lastName=@"";
+    address =[[Address alloc]init];
+    return self;
 }
 @end
