@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1DAF8301B7B01F1002259A3 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1DAF82E1B7B01F1002259A3 /* Database.xcdatamodeld */; };
+		F1DAF8361B7B06E2002259A3 /* PersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAF8351B7B06E2002259A3 /* PersonInfo.m */; };
 		F1F2AFC61B78E1E000724219 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AFC51B78E1E000724219 /* main.m */; };
 		F1F2AFC91B78E1E000724219 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AFC81B78E1E000724219 /* AppDelegate.m */; };
 		F1F2AFD11B78E1E000724219 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F2AFD01B78E1E000724219 /* Images.xcassets */; };
@@ -17,7 +19,6 @@
 		F1F700AC1B79A6A200CDC49B /* CustomizedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F700AA1B79A6A200CDC49B /* CustomizedTableViewCell.xib */; };
 		F1F700B31B79A6F600CDC49B /* CustomizedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F700B11B79A6F600CDC49B /* CustomizedTableViewCell.m */; };
 		F1F700B41B79A6F600CDC49B /* CustomizedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F700B21B79A6F600CDC49B /* CustomizedTableViewCell.xib */; };
-		F1F700C01B79B08600CDC49B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F700BF1B79B08600CDC49B /* Person.m */; };
 		F1F700C41B79E0CD00CDC49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F700C21B79E0CD00CDC49B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1DAF82F1B7B01F1002259A3 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		F1DAF8341B7B06E2002259A3 /* PersonInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfo.h; sourceTree = "<group>"; };
+		F1DAF8351B7B06E2002259A3 /* PersonInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfo.m; sourceTree = "<group>"; };
 		F1F2AFC01B78E1E000724219 /* Assignment_5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment_5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F2AFC41B78E1E000724219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F2AFC51B78E1E000724219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,8 +54,6 @@
 		F1F700B01B79A6F600CDC49B /* CustomizedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomizedTableViewCell.h; path = Controllers/CustomizedTableViewCell.h; sourceTree = "<group>"; };
 		F1F700B11B79A6F600CDC49B /* CustomizedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomizedTableViewCell.m; path = Controllers/CustomizedTableViewCell.m; sourceTree = "<group>"; };
 		F1F700B21B79A6F600CDC49B /* CustomizedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomizedTableViewCell.xib; path = Controllers/CustomizedTableViewCell.xib; sourceTree = "<group>"; };
-		F1F700BE1B79B08600CDC49B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Assignment_5/Models/Person.h; sourceTree = "<group>"; };
-		F1F700BF1B79B08600CDC49B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Assignment_5/Models/Person.m; sourceTree = "<group>"; };
 		F1F700C31B79E0CD00CDC49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,8 @@
 		F1F2AFB71B78E1E000724219 = {
 			isa = PBXGroup;
 			children = (
+				F1DAF8341B7B06E2002259A3 /* PersonInfo.h */,
+				F1DAF8351B7B06E2002259A3 /* PersonInfo.m */,
 				F1F2AFC21B78E1E000724219 /* Assignment_5 */,
 				F1F2AFDC1B78E1E000724219 /* Assignment_5Tests */,
 				F1F2AFC11B78E1E000724219 /* Products */,
@@ -95,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				F1F700C21B79E0CD00CDC49B /* Main.storyboard */,
+				F1DAF82E1B7B01F1002259A3 /* Database.xcdatamodeld */,
 				F1F700AA1B79A6A200CDC49B /* CustomizedTableViewCell.xib */,
-				F1F700C11B79B0A400CDC49B /* Model */,
 				F1F2AFC71B78E1E000724219 /* AppDelegate.h */,
 				F1F2AFC81B78E1E000724219 /* AppDelegate.m */,
 				F1F2AFD01B78E1E000724219 /* Images.xcassets */,
@@ -145,16 +149,6 @@
 				F1F700B21B79A6F600CDC49B /* CustomizedTableViewCell.xib */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		F1F700C11B79B0A400CDC49B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F1F700BF1B79B08600CDC49B /* Person.m */,
-				F1F700BE1B79B08600CDC49B /* Person.h */,
-			);
-			name = Model;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F700C01B79B08600CDC49B /* Person.m in Sources */,
+				F1DAF8301B7B01F1002259A3 /* Database.xcdatamodeld in Sources */,
+				F1DAF8361B7B06E2002259A3 /* PersonInfo.m in Sources */,
 				F1F700B31B79A6F600CDC49B /* CustomizedTableViewCell.m in Sources */,
 				F1F2AFF21B78E35C00724219 /* FrontViewController.m in Sources */,
 				F1F2AFEE1B78E31D00724219 /* AddFriendViewController.m in Sources */,
@@ -471,6 +466,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1DAF82E1B7B01F1002259A3 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1DAF82F1B7B01F1002259A3 /* Database.xcdatamodel */,
+			);
+			currentVersion = F1DAF82F1B7B01F1002259A3 /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F1F2AFB81B78E1E000724219 /* Project object */;
 }

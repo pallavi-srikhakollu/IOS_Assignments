@@ -1,25 +1,38 @@
 
 
 #import "FrontViewController.h"
-#import "AddFriendViewController.h"
-#import "CustomizedTableViewCell.h"
-#import"AppDelegate.h"
+
 
 @interface FrontViewController (){
     NSString *CellIdentifier;
+    NSArray *fetchedObjects;
 }
 
 @end
 
 @implementation FrontViewController
+
 @synthesize tableViewFriendList;
 - (void)viewDidLoad {
     [super viewDidLoad];
     CellIdentifier = @"cell";
     [tableViewFriendList registerNib:[UINib nibWithNibName:@"CustomizedTableViewCell" bundle:nil] forCellReuseIdentifier:CellIdentifier];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"PersonInfo" inManagedObjectContext:context];
+    
+    [fetchRequest setEntity:entity];
+    
+    NSError *error = nil;
+    fetchedObjects = [[NSArray alloc]init];
+    fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    
     [tableViewFriendList reloadData];
 }
 - (void)didReceiveMemoryWarning {
@@ -28,7 +41,18 @@
 }
 
 
+- (void)tapAction:(id)sender {
+    NSLog(@"Cell tapped");
+}
 
+- (NSManagedObjectContext *)managedObjectContext {
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
+}
 
 
 
@@ -40,10 +64,11 @@
     [self.navigationController pushViewController:myListVCntrl animated:true];
     
 }
+#pragma  table view
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return [((AppDelegate *)[UIApplication sharedApplication].delegate).arrayOfFriendsInformation count];
+    return [fetchedObjects count];
     
     
 }
@@ -63,16 +88,32 @@
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
     
-    Person *person = [[Person alloc]init];
-    
-    person = [((AppDelegate *)[UIApplication sharedApplication].delegate).arrayOfFriendsInformation objectAtIndex:indexPath.row];
-    
+    PersonInfo *person=[fetchedObjects objectAtIndex:indexPath.row];
     cell.labelFirstName.text = person.firstName;
     cell.labelLastName.text =person.lastName;
     cell.uiImageProfilePicture.image = [UIImage imageNamed:@"Image"];
-    return cell;
     
+    return cell;
 }
+
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    AddFriendViewController *addFriendViewController=  [storyboard instantiateViewControllerWithIdentifier:@"AddFriendViewController"];
+    PersonInfo *person = [fetchedObjects objectAtIndex:indexPath.row];
+    
+    addFriendViewController.stringFirstName = person.firstName;
+    addFriendViewController.stringLastName = person.lastName;
+    addFriendViewController.stringCity = person.city;
+    addFriendViewController.stringState = person.state;
+    addFriendViewController.isEdit = YES;
+    addFriendViewController.rowIndex = indexPath.row;
+    [self.navigationController pushViewController:addFriendViewController animated:true];
+}
+
+
+
 
 
 @end

@@ -20,20 +20,6 @@
                ReferencedContainer = "container:Assignment_5.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1F2AFD81B78E1E000724219"
-               BuildableName = "Assignment_5Tests.xctest"
-               BlueprintName = "Assignment_5Tests"
-               ReferencedContainer = "container:Assignment_5.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1F2AFD81B78E1E000724219"
-               BuildableName = "Assignment_5Tests.xctest"
-               BlueprintName = "Assignment_5Tests"
-               ReferencedContainer = "container:Assignment_5.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
