@@ -16,7 +16,6 @@
 		F1F2AFE01B78E1E000724219 /* Assignment_5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AFDF1B78E1E000724219 /* Assignment_5Tests.m */; };
 		F1F2AFEE1B78E31D00724219 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AFED1B78E31D00724219 /* AddFriendViewController.m */; };
 		F1F2AFF21B78E35C00724219 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2AFF11B78E35C00724219 /* FrontViewController.m */; };
-		F1F700AC1B79A6A200CDC49B /* CustomizedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F700AA1B79A6A200CDC49B /* CustomizedTableViewCell.xib */; };
 		F1F700B31B79A6F600CDC49B /* CustomizedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F700B11B79A6F600CDC49B /* CustomizedTableViewCell.m */; };
 		F1F700B41B79A6F600CDC49B /* CustomizedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F700B21B79A6F600CDC49B /* CustomizedTableViewCell.xib */; };
 		F1F700C41B79E0CD00CDC49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F700C21B79E0CD00CDC49B /* Main.storyboard */; };
@@ -34,8 +33,8 @@
 
 /* Begin PBXFileReference section */
 		F1DAF82F1B7B01F1002259A3 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
-		F1DAF8341B7B06E2002259A3 /* PersonInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfo.h; sourceTree = "<group>"; };
-		F1DAF8351B7B06E2002259A3 /* PersonInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfo.m; sourceTree = "<group>"; };
+		F1DAF8341B7B06E2002259A3 /* PersonInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonInfo.h; path = ../PersonInfo.h; sourceTree = "<group>"; };
+		F1DAF8351B7B06E2002259A3 /* PersonInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonInfo.m; path = ../PersonInfo.m; sourceTree = "<group>"; };
 		F1F2AFC01B78E1E000724219 /* Assignment_5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment_5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F2AFC41B78E1E000724219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F2AFC51B78E1E000724219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,7 +49,6 @@
 		F1F2AFED1B78E31D00724219 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddFriendViewController.m; path = Controllers/AddFriendViewController.m; sourceTree = "<group>"; };
 		F1F2AFF01B78E35C00724219 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrontViewController.h; path = Controllers/FrontViewController.h; sourceTree = "<group>"; };
 		F1F2AFF11B78E35C00724219 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontViewController.m; path = Controllers/FrontViewController.m; sourceTree = "<group>"; };
-		F1F700AA1B79A6A200CDC49B /* CustomizedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomizedTableViewCell.xib; path = Controllers/CustomizedTableViewCell.xib; sourceTree = "<group>"; };
 		F1F700B01B79A6F600CDC49B /* CustomizedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomizedTableViewCell.h; path = Controllers/CustomizedTableViewCell.h; sourceTree = "<group>"; };
 		F1F700B11B79A6F600CDC49B /* CustomizedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomizedTableViewCell.m; path = Controllers/CustomizedTableViewCell.m; sourceTree = "<group>"; };
 		F1F700B21B79A6F600CDC49B /* CustomizedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomizedTableViewCell.xib; path = Controllers/CustomizedTableViewCell.xib; sourceTree = "<group>"; };
@@ -75,11 +73,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1644F7F1B7CE53500AF8C77 /* CommonClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F1F700C21B79E0CD00CDC49B /* Main.storyboard */,
+				F1F2AFC71B78E1E000724219 /* AppDelegate.h */,
+				F1F2AFC81B78E1E000724219 /* AppDelegate.m */,
+			);
+			name = CommonClasses;
+			sourceTree = "<group>";
+		};
 		F1F2AFB71B78E1E000724219 = {
 			isa = PBXGroup;
 			children = (
-				F1DAF8341B7B06E2002259A3 /* PersonInfo.h */,
-				F1DAF8351B7B06E2002259A3 /* PersonInfo.m */,
 				F1F2AFC21B78E1E000724219 /* Assignment_5 */,
 				F1F2AFDC1B78E1E000724219 /* Assignment_5Tests */,
 				F1F2AFC11B78E1E000724219 /* Products */,
@@ -98,13 +104,7 @@
 		F1F2AFC21B78E1E000724219 /* Assignment_5 */ = {
 			isa = PBXGroup;
 			children = (
-				F1F700C21B79E0CD00CDC49B /* Main.storyboard */,
-				F1DAF82E1B7B01F1002259A3 /* Database.xcdatamodeld */,
-				F1F700AA1B79A6A200CDC49B /* CustomizedTableViewCell.xib */,
-				F1F2AFC71B78E1E000724219 /* AppDelegate.h */,
-				F1F2AFC81B78E1E000724219 /* AppDelegate.m */,
-				F1F2AFD01B78E1E000724219 /* Images.xcassets */,
-				F1F2AFD21B78E1E000724219 /* LaunchScreen.xib */,
+				F1644F7F1B7CE53500AF8C77 /* CommonClasses */,
 				F1F2AFEF1B78E32500724219 /* Controllers */,
 				F1F2AFC31B78E1E000724219 /* Supporting Files */,
 			);
@@ -115,7 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				F1F2AFC41B78E1E000724219 /* Info.plist */,
+				F1DAF82E1B7B01F1002259A3 /* Database.xcdatamodeld */,
+				F1DAF8341B7B06E2002259A3 /* PersonInfo.h */,
+				F1DAF8351B7B06E2002259A3 /* PersonInfo.m */,
 				F1F2AFC51B78E1E000724219 /* main.m */,
+				F1F2AFD21B78E1E000724219 /* LaunchScreen.xib */,
+				F1F2AFD01B78E1E000724219 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,7 +238,6 @@
 			files = (
 				F1F700B41B79A6F600CDC49B /* CustomizedTableViewCell.xib in Resources */,
 				F1F700C41B79E0CD00CDC49B /* Main.storyboard in Resources */,
-				F1F700AC1B79A6A200CDC49B /* CustomizedTableViewCell.xib in Resources */,
 				F1F2AFD41B78E1E000724219 /* LaunchScreen.xib in Resources */,
 				F1F2AFD11B78E1E000724219 /* Images.xcassets in Resources */,
 			);

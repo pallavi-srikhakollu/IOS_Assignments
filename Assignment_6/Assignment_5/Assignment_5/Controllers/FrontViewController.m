@@ -90,7 +90,7 @@
     
     PersonInfo *person=[fetchedObjects objectAtIndex:indexPath.row];
     cell.labelFirstName.text = person.firstName;
-    cell.labelLastName.text =person.lastName;
+    cell.labelLastName.text = person.lastName;
     cell.uiImageProfilePicture.image = [UIImage imageNamed:@"Image"];
     
     return cell;

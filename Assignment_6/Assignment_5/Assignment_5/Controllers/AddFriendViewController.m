@@ -78,7 +78,6 @@
             NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
         }
         
-        [self dismissViewControllerAnimated:YES completion:nil];
     }
     
     [self.navigationController popViewControllerAnimated:true];
