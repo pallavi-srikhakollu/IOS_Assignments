@@ -11,10 +11,7 @@
 @synthesize labelCity;
 @synthesize labelState;
 @synthesize lableLastName;
-@synthesize firstname;
-@synthesize lastname;
-@synthesize city;
-@synthesize state;
+@synthesize person;
 
 
 - (void)viewDidLoad {
@@ -22,10 +19,10 @@
     self.title = @"Details";
     //Assigning detils to label
     
-    self.lableFirstName.text = firstname;
-    lableLastName.text = lastname;
-    labelCity.text = city;
-    labelState.text = state;
+    self.lableFirstName.text = person.firstname;
+    lableLastName.text = person.lastname;
+    labelCity.text = person.city;
+    labelState.text = person.state;
     
     
     

@@ -26,15 +26,16 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     InfoDisplayViewController *infoDisplayViewController =  [storyboard instantiateViewControllerWithIdentifier:@"InfoDisplayViewController"];
-    infoDisplayViewController.firstname = textFieldFirstname.text;
-    
+    Person * person = [[Person alloc]init];
+    person.firstname = textFieldFirstname.text;
+    person.lastname = textFieldLastname.text;
+    person.state = textFieldState.text;
+    person.city = textFieldCity.text;
+
+    infoDisplayViewController.person = person;
     //navigating to other display controller
     
     [self.navigationController pushViewController:infoDisplayViewController animated:true];
-    infoDisplayViewController.firstname = textFieldFirstname.text;
-    infoDisplayViewController.lastname = textFieldLastname.text;
-    infoDisplayViewController.state = textFieldState.text;
-    infoDisplayViewController.city = textFieldCity.text;
     
     
     

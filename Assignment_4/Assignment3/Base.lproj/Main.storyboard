@@ -47,7 +47,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hi-cI-pNA">
-                                        <rect key="frame" x="98" y="353" width="91" height="45"/>
+                                        <rect key="frame" x="115" y="353" width="91" height="45"/>
                                         <color key="backgroundColor" red="0.60001215178125844" green="0.64895278952613678" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="91" id="0lD-Gy-54E"/>
@@ -92,7 +92,7 @@
                                     <constraint firstItem="IMv-sv-H8Z" firstAttribute="leading" secondItem="wsq-DK-FQh" secondAttribute="leading" constant="-1" id="6UL-xG-1LI"/>
                                     <constraint firstItem="uMd-pK-4gV" firstAttribute="leading" secondItem="dyD-Bf-Ubs" secondAttribute="leading" id="AVL-3Q-M8H"/>
                                     <constraint firstItem="wsq-DK-FQh" firstAttribute="top" secondItem="IMv-sv-H8Z" secondAttribute="bottom" constant="33" id="FpT-f0-4vF"/>
-                                    <constraint firstAttribute="centerX" secondItem="4hi-cI-pNA" secondAttribute="centerX" constant="16.5" id="Igt-QN-Fgv"/>
+                                    <constraint firstAttribute="centerX" secondItem="4hi-cI-pNA" secondAttribute="centerX" id="Igt-QN-Fgv"/>
                                     <constraint firstItem="eIa-sa-tGQ" firstAttribute="height" secondItem="C6H-ZR-EO2" secondAttribute="height" id="N4p-4v-plb"/>
                                     <constraint firstItem="wsq-DK-FQh" firstAttribute="height" secondItem="bFw-B4-rVM" secondAttribute="height" id="OHz-mA-ZZ2"/>
                                     <constraint firstItem="bFw-B4-rVM" firstAttribute="top" secondItem="wsq-DK-FQh" secondAttribute="bottom" constant="30" id="Oo9-HA-cjf"/>

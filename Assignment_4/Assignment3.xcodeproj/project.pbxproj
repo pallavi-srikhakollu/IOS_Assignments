@@ -15,6 +15,7 @@
 		F1050D551B736F230060F17D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1050D531B736F230060F17D /* LaunchScreen.xib */; };
 		F1050D611B736F240060F17D /* Assignment3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1050D601B736F240060F17D /* Assignment3Tests.m */; };
 		F1050D731B73902D0060F17D /* InfoDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1050D721B73902D0060F17D /* InfoDisplayViewController.m */; };
+		F1644F7E1B7CDFEA00AF8C77 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F1644F7D1B7CDFEA00AF8C77 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		F1050D601B736F240060F17D /* Assignment3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment3Tests.m; sourceTree = "<group>"; };
 		F1050D711B73902D0060F17D /* InfoDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoDisplayViewController.h; path = controllers/InfoDisplayViewController.h; sourceTree = "<group>"; };
 		F1050D721B73902D0060F17D /* InfoDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoDisplayViewController.m; path = controllers/InfoDisplayViewController.m; sourceTree = "<group>"; };
+		F1644F7C1B7CDFEA00AF8C77 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Models/Person.h; sourceTree = "<group>"; };
+		F1644F7D1B7CDFEA00AF8C77 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Models/Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +87,9 @@
 		F1050D431B736F230060F17D /* Assignment3 */ = {
 			isa = PBXGroup;
 			children = (
-				F1050D481B736F230060F17D /* AppDelegate.h */,
-				F1050D491B736F230060F17D /* AppDelegate.m */,
+				F1644F7B1B7CDFC300AF8C77 /* Models */,
+				F1644F7A1B7CDF2A00AF8C77 /* CommonClasses */,
 				F1050D6A1B73877A0060F17D /* controllers */,
-				F1050D4E1B736F230060F17D /* Main.storyboard */,
-				F1050D511B736F230060F17D /* Images.xcassets */,
-				F1050D531B736F230060F17D /* LaunchScreen.xib */,
 				F1050D441B736F230060F17D /* Supporting Files */,
 			);
 			path = Assignment3;
@@ -98,6 +98,8 @@
 		F1050D441B736F230060F17D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1050D511B736F230060F17D /* Images.xcassets */,
+				F1050D531B736F230060F17D /* LaunchScreen.xib */,
 				F1050D451B736F230060F17D /* Info.plist */,
 				F1050D461B736F230060F17D /* main.m */,
 			);
@@ -130,6 +132,25 @@
 				F1050D721B73902D0060F17D /* InfoDisplayViewController.m */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		F1644F7A1B7CDF2A00AF8C77 /* CommonClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F1050D4E1B736F230060F17D /* Main.storyboard */,
+				F1050D481B736F230060F17D /* AppDelegate.h */,
+				F1050D491B736F230060F17D /* AppDelegate.m */,
+			);
+			name = CommonClasses;
+			sourceTree = "<group>";
+		};
+		F1644F7B1B7CDFC300AF8C77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1644F7C1B7CDFEA00AF8C77 /* Person.h */,
+				F1644F7D1B7CDFEA00AF8C77 /* Person.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +255,7 @@
 			files = (
 				F1050D4D1B736F230060F17D /* ViewController.m in Sources */,
 				F1050D731B73902D0060F17D /* InfoDisplayViewController.m in Sources */,
+				F1644F7E1B7CDFEA00AF8C77 /* Person.m in Sources */,
 				F1050D4A1B736F230060F17D /* AppDelegate.m in Sources */,
 				F1050D471B736F230060F17D /* main.m in Sources */,
 			);
@@ -430,6 +452,7 @@
 				F1050D661B736F240060F17D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1050D671B736F240060F17D /* Build configuration list for PBXNativeTarget "Assignment3Tests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +461,7 @@
 				F1050D691B736F240060F17D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
