@@ -1,7 +1,7 @@
 
 
 #import "ViewController.h"
-
+#define BASE_URL @"http://api.openweathermap.org/data/2.5/weather?q=%@"
 @interface ViewController ()
 
 @end
@@ -10,6 +10,7 @@
 @synthesize receivedData;
 @synthesize  connection;
 @synthesize responseDictionary;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -19,7 +20,7 @@
 
 -(void)connectionEstablishment:(NSString *) cityName{
     
-    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:[[NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?q=%@",cityName] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:[[NSString stringWithFormat:BASE_URL,cityName] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
     
     connection = [[NSURLConnection alloc]initWithRequest:request delegate:self];
 }
@@ -37,7 +38,7 @@
     
 }
 
-#pragma connectionFunction
+#pragma mark- connectionFunction
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
     
