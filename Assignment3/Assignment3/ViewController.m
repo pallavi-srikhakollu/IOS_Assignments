@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=@"Details entry page";
+    self.title = @"Details entry page";
     // Do any additional setup after loading the view, typically from a nib.
 }
 //ON click save button
@@ -26,8 +26,6 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     InfoDisplayViewController *infoDisplayViewController =  [storyboard instantiateViewControllerWithIdentifier:@"InfoDisplayViewController"];
-    infoDisplayViewController.firstname = textFieldFirstname.text;
-    
     //navigating to other display controller
     
     [self.navigationController pushViewController:infoDisplayViewController animated:true];
@@ -36,8 +34,6 @@
     infoDisplayViewController.person.lastname = textFieldLastname.text;
     infoDisplayViewController.person.state = textFieldState.text;
     infoDisplayViewController.person.city = textFieldCity.text;
-    
-    
     
 }
 

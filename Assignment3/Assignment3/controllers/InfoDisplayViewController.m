@@ -11,10 +11,6 @@
 @synthesize labelCity;
 @synthesize labelState;
 @synthesize lableLastName;
-@synthesize firstname;
-@synthesize lastname;
-@synthesize city;
-@synthesize state;
 @synthesize person;
 
 - (void)viewDidLoad {
