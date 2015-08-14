@@ -31,10 +31,11 @@
     //navigating to other display controller
     
     [self.navigationController pushViewController:infoDisplayViewController animated:true];
-    infoDisplayViewController.firstname = textFieldFirstname.text;
-    infoDisplayViewController.lastname = textFieldLastname.text;
-    infoDisplayViewController.state = textFieldState.text;
-    infoDisplayViewController.city = textFieldCity.text;
+    infoDisplayViewController.person = [[Person alloc]init];
+    infoDisplayViewController.person.firstname = textFieldFirstname.text;
+    infoDisplayViewController.person.lastname = textFieldLastname.text;
+    infoDisplayViewController.person.state = textFieldState.text;
+    infoDisplayViewController.person.city = textFieldCity.text;
     
     
     

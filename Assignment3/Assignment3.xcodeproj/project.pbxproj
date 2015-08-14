@@ -15,6 +15,7 @@
 		F1050D551B736F230060F17D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1050D531B736F230060F17D /* LaunchScreen.xib */; };
 		F1050D611B736F240060F17D /* Assignment3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1050D601B736F240060F17D /* Assignment3Tests.m */; };
 		F1050D731B73902D0060F17D /* InfoDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1050D721B73902D0060F17D /* InfoDisplayViewController.m */; };
+		F1F97F521B7E046100A26177 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F97F511B7E046100A26177 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		F1050D601B736F240060F17D /* Assignment3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment3Tests.m; sourceTree = "<group>"; };
 		F1050D711B73902D0060F17D /* InfoDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoDisplayViewController.h; path = controllers/InfoDisplayViewController.h; sourceTree = "<group>"; };
 		F1050D721B73902D0060F17D /* InfoDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoDisplayViewController.m; path = controllers/InfoDisplayViewController.m; sourceTree = "<group>"; };
+		F1F97F501B7E046100A26177 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Models/Person.h; sourceTree = "<group>"; };
+		F1F97F511B7E046100A26177 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Models/Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				F1050D4B1B736F230060F17D /* ViewController.h */,
 				F1050D4C1B736F230060F17D /* ViewController.m */,
 				F1050D711B73902D0060F17D /* InfoDisplayViewController.h */,
+				F1F97F501B7E046100A26177 /* Person.h */,
+				F1F97F511B7E046100A26177 /* Person.m */,
 				F1050D721B73902D0060F17D /* InfoDisplayViewController.m */,
 			);
 			name = controllers;
@@ -234,6 +239,7 @@
 			files = (
 				F1050D4D1B736F230060F17D /* ViewController.m in Sources */,
 				F1050D731B73902D0060F17D /* InfoDisplayViewController.m in Sources */,
+				F1F97F521B7E046100A26177 /* Person.m in Sources */,
 				F1050D4A1B736F230060F17D /* AppDelegate.m in Sources */,
 				F1050D471B736F230060F17D /* main.m in Sources */,
 			);
@@ -430,6 +436,7 @@
 				F1050D661B736F240060F17D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1050D671B736F240060F17D /* Build configuration list for PBXNativeTarget "Assignment3Tests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				F1050D691B736F240060F17D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,6 @@
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 @interface InfoDisplayViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *lableFirstName;
@@ -10,7 +11,7 @@
 @property NSString * lastname;
 @property NSString * city;
 @property NSString * state;
-
+@property Person *person;
 
 
 @end
