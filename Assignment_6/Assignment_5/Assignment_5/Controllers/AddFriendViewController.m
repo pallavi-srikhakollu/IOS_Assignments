@@ -8,19 +8,18 @@
 
 @implementation AddFriendViewController
 @synthesize textFieldFirstName,textFieldState,textFieldLastName,textFieldCity;
-@synthesize  stringFirstName,stringLastName,stringCity,stringState;
 @synthesize isEdit;
 @synthesize buttonSaveData;
 @synthesize rowIndex;
-
+@synthesize person;
 - (void)viewDidLoad {
     [super viewDidLoad];
     if(isEdit == YES)
     {
-        textFieldFirstName.text = stringFirstName;
-        textFieldLastName.text = stringLastName;
-        textFieldCity.text = stringCity;
-        textFieldState.text = stringState;
+        textFieldFirstName.text = person.firstName;
+        textFieldLastName.text = person.lastName;
+        textFieldCity.text = person.city;
+        textFieldState.text = person.state;
         [buttonSaveData setTitle:@"Edit" forState:UIControlStateNormal];
     }
 }

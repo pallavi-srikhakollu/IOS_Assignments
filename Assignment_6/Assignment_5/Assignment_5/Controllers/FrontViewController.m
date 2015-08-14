@@ -101,14 +101,12 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     AddFriendViewController *addFriendViewController=  [storyboard instantiateViewControllerWithIdentifier:@"AddFriendViewController"];
-    PersonInfo *person = [fetchedObjects objectAtIndex:indexPath.row];
     
-    addFriendViewController.stringFirstName = person.firstName;
-    addFriendViewController.stringLastName = person.lastName;
-    addFriendViewController.stringCity = person.city;
-    addFriendViewController.stringState = person.state;
+    PersonInfo *person = [fetchedObjects objectAtIndex:indexPath.row];
+
     addFriendViewController.isEdit = YES;
     addFriendViewController.rowIndex = indexPath.row;
+    addFriendViewController .person = person;
     [self.navigationController pushViewController:addFriendViewController animated:true];
 }
 
