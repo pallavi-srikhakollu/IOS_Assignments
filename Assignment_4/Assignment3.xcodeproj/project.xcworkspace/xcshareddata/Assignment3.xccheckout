@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>61C3E2A0-C3D5-458A-8028-B0205A77C4BF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Assignment3</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D40155FBD15E809E9A95A916CEFC7101E4CDBF6A</key>
+		<string>https://github.com/pallavis-webonise/IOS_Assignments.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Assignment_4/Assignment3.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D40155FBD15E809E9A95A916CEFC7101E4CDBF6A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pallavis-webonise/IOS_Assignments.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D40155FBD15E809E9A95A916CEFC7101E4CDBF6A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D40155FBD15E809E9A95A916CEFC7101E4CDBF6A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS_Assignments</string>
+		</dict>
+	</array>
+</dict>
+</plist>
