@@ -7,7 +7,7 @@ class FetchDetailsViewController: UIViewController{
     var dataFromURL : NSMutableData? = nil
     var actInd  : UIActivityIndicatorView?
     var weatherInfo = WeatherInfo()
-    
+    let API_URL = "http://api.openweathermap.org/data/2.5/weather?q=London,uk"
     
     // MARK: - URLConnection
     
@@ -37,7 +37,7 @@ class FetchDetailsViewController: UIViewController{
     
     @IBAction func buttonFetchDetails(sender: UIButton) {
         
-        var url : String = "http://api.openweathermap.org/data/2.5/weather?q=London,uk"
+        var url : String = API_URL
         var request : NSMutableURLRequest = NSMutableURLRequest()
         request.URL = NSURL(string: url)
         request.HTTPMethod = "GET"
@@ -45,7 +45,6 @@ class FetchDetailsViewController: UIViewController{
         dataFromURL = NSMutableData()
         connection.start()
         view.addSubview(actInd!)
-        
         actInd!.startAnimating()
         
         
@@ -54,7 +53,6 @@ class FetchDetailsViewController: UIViewController{
         var alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
- 
     }
     
     // MARK: - URLConnection

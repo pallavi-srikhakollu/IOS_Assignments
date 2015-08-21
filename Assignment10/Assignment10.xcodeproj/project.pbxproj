@@ -86,7 +86,6 @@
 				F16464661B85AEB70019998C /* models */,
 				F16464611B85AE030019998C /* common files */,
 				F16464601B85ADDE0019998C /* controllers */,
-				F123F2EB1B84B67B00E60406 /* Assignment10.xcdatamodeld */,
 				F123F2E71B84B67B00E60406 /* Supporting Files */,
 			);
 			path = Assignment10;
@@ -95,6 +94,7 @@
 		F123F2E71B84B67B00E60406 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F123F2EB1B84B67B00E60406 /* Assignment10.xcdatamodeld */,
 				F123F2E81B84B67B00E60406 /* Info.plist */,
 				F123F2F51B84B67B00E60406 /* LaunchScreen.xib */,
 				F123F2F31B84B67B00E60406 /* Images.xcassets */,
