@@ -7,9 +7,4 @@ class Address{
         self.city = "default"
         self.state = ""
     }
-    //  func copy(copyFrom: Address) {
-    //       city = copyFrom.city
-    //       state = copyFrom.state
-    //    }
-    
-}
+    }

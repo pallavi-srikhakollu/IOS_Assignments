@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Assignment9
-//
-//  Created by webonise on 19/08/15.
-//  Copyright (c) 2015 webonise. All rights reserved.
-//
+
 
 import UIKit
 import CoreData
@@ -18,12 +12,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         var employee = Employee()
         employee.arrayOfEmployeeInformation()
+        if let array = employee.arrayOfEmployeeObjects{
+    
         employee.employeeWithHighestExperienceInGivenTechnology("java")
         employee.selectedEmployeeWithEqualExperience(1)
         employee.selectedEmployeeWithLessExperience(1)
-        employee.selectedEmployeeWithMoreExperience(2)
+        employee.selectedEmployeeWithMoreThanGivenExperience(2)
         
-       
+        }
         return true
     }
 

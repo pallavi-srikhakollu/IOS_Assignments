@@ -67,7 +67,7 @@ class Employee : Person{
     var employeeId:Int
     var experience :Int
     var technology : String
-    var arrayOfEmployeeObjects = Array <Employee>()
+    var arrayOfEmployeeObjects :Array <Employee>!
     
     
     override init() {
@@ -75,6 +75,7 @@ class Employee : Person{
         self.technology = ""
         self.employeeId = 0
         self.experience = 0
+        arrayOfEmployeeObjects = Array()
         super.init()
         
     }
@@ -89,6 +90,7 @@ class Employee : Person{
     func arrayOfEmployeeInformation(){
         
         for dict in arrayOfInformationDicitonary {
+            
             var employee = Employee()
             employee.firstName = dict["firstName"] as! String
             employee.lastName = dict["lastName"] as! String
@@ -101,6 +103,8 @@ class Employee : Person{
             
             employee.address.city = dictArray1["city"] as String!
             employee.address.state = dictArray1["state"] as String!
+            
+            
             arrayOfEmployeeObjects.append(employee)
         }
     }
@@ -131,13 +135,13 @@ class Employee : Person{
         
     }
     
-    func selectedEmployeeWithMoreExperience(userExperienceInput:Int){
+    func selectedEmployeeWithMoreThanGivenExperience(userExperienceInput:Int){
         
         println("Employee details with less expereinece then \(userExperienceInput)")
         
         for employeeTemp in arrayOfEmployeeObjects
         {
-            if(employeeTemp.experience == userExperienceInput)
+            if(employeeTemp.experience > userExperienceInput)
             {
                 employeeTemp.printDetails()
             }
