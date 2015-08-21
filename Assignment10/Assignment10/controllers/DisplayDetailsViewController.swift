@@ -12,10 +12,12 @@ class DisplayDetailsViewController: UIViewController{
     var weatherInformation : WeatherInfo!
     override func viewDidLoad() {
         super.viewDidLoad()
+        if  weatherInformation != nil {
         labelName.text = weatherInformation.name
         labelHumidity.text = weatherInformation.humidity.description
         labelMaximumTemperature.text = weatherInformation.minimumTemperature.description
         labelMinimumTemperature.text = weatherInformation.maximumTemperature.description
+        }
     }
     
     override func didReceiveMemoryWarning() {
