@@ -109,11 +109,8 @@ class Employee : Person{
         
         println("Employee details with less expereinece then \(userExperienceInput)");
         for employeeTemp in arrayOfEmployeeObjects {
-            if(employeeTemp.experience<userExperienceInput)
-            {
-                
+            if(employeeTemp.experience < userExperienceInput){
                 employeeTemp.printDetails()
-                
             }
         }
         
